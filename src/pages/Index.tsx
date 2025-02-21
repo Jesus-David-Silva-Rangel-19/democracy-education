@@ -1,8 +1,10 @@
-
 import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import InfoCard from "@/components/InfoCard";
+import AuthoritarianQuiz from "@/components/AuthoritarianQuiz";
+import EnlightenmentSection from "@/components/EnlightenmentSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -37,6 +39,15 @@ const Index = () => {
         </div>
       </Section>
 
+      <Section title="The Enlightenment & Democracy" className="bg-white">
+        <p className="mb-8">
+          The foundations of modern liberal democracy were laid during the Enlightenment, 
+          when philosophers developed key concepts about individual rights, separation of 
+          powers, and the social contract. 🌟
+        </p>
+        <EnlightenmentSection />
+      </Section>
+
       <Section title="How Democracies Die" className="bg-white">
         <p className="mb-8">
           Based on Steven Levitsky and Daniel Ziblatt's groundbreaking work, democracies often 
@@ -68,6 +79,15 @@ const Index = () => {
             </ul>
           </InfoCard>
         </div>
+      </Section>
+
+      <Section title="Authoritarian Leadership Assessment">
+        <p className="mb-8 text-center max-w-3xl mx-auto">
+          Based on Levitsky and Ziblatt's research, this assessment helps identify 
+          potential authoritarian tendencies in political leaders. Answer the following 
+          questions about a leader's behavior and rhetoric: 🎯
+        </p>
+        <AuthoritarianQuiz />
       </Section>
 
       <Section title="Global Challenges to Democracy">
@@ -134,6 +154,8 @@ const Index = () => {
           </InfoCard>
         </div>
       </Section>
+
+      <Footer />
     </div>
   );
 };
