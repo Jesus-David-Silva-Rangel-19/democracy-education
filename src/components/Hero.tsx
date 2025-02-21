@@ -19,7 +19,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="font-alegreya text-5xl md:text-7xl font-extrabold mb-6"
         >
-          Understanding Democracy
+          Entendiendo la Democracia 🗽
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0 }}
@@ -27,7 +27,7 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="font-labrada text-xl md:text-2xl max-w-3xl mx-auto mb-12"
         >
-          A comprehensive guide to democratic principles, challenges, and the importance of civic engagement
+          Una guía completa sobre los principios democráticos, sus desafíos y la importancia del compromiso cívico
         </motion.p>
         <motion.button
           initial={{ opacity: 0 }}
@@ -35,7 +35,7 @@ const Hero = () => {
           transition={{ delay: 0.6 }}
           onClick={scrollToContent}
           className="animate-bounce absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary-light hover:text-primary transition-colors"
-          aria-label="Scroll to content"
+          aria-label="Desplazarse al contenido"
         >
           <ChevronDown size={32} />
         </motion.button>

@@ -1,4 +1,5 @@
 
+// ... Update the AuthoritarianQuiz component with Spanish translations
 import { useState } from "react";
 import { Check, X, AlertTriangle } from "lucide-react";
 import { motion } from "framer-motion";
@@ -13,25 +14,25 @@ interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    text: "Does the leader reject or show weak commitment to democratic rules?",
+    text: "¿El líder rechaza o muestra un débil compromiso con las reglas democráticas?",
     weight: 25,
     icon: "⚖️"
   },
   {
     id: 2,
-    text: "Do they deny the legitimacy of their opponents?",
+    text: "¿Niega la legitimidad de sus oponentes?",
     weight: 25,
     icon: "🚫"
   },
   {
     id: 3,
-    text: "Do they tolerate or encourage violence?",
+    text: "¿Tolera o fomenta la violencia?",
     weight: 25,
     icon: "⚔️"
   },
   {
     id: 4,
-    text: "Do they show readiness to curtail civil liberties or media freedom?",
+    text: "¿Muestra disposición a restringir las libertades civiles o la libertad de prensa?",
     weight: 25,
     icon: "📢"
   }
@@ -56,9 +57,9 @@ const AuthoritarianQuiz = () => {
   };
 
   const getRiskLevel = (score: number) => {
-    if (score >= 75) return { text: "High Risk", color: "text-red-600", icon: <AlertTriangle className="inline" /> };
-    if (score >= 50) return { text: "Moderate Risk", color: "text-orange-500", icon: <AlertTriangle className="inline" /> };
-    return { text: "Low Risk", color: "text-green-600", icon: <Check className="inline" /> };
+    if (score >= 75) return { text: "Riesgo Alto", color: "text-red-600", icon: <AlertTriangle className="inline" /> };
+    if (score >= 50) return { text: "Riesgo Moderado", color: "text-orange-500", icon: <AlertTriangle className="inline" /> };
+    return { text: "Riesgo Bajo", color: "text-green-600", icon: <Check className="inline" /> };
   };
 
   return (
@@ -69,7 +70,7 @@ const AuthoritarianQuiz = () => {
       className="max-w-3xl mx-auto bg-white rounded-lg shadow-xl p-8"
     >
       <h3 className="font-alegreya text-2xl font-bold mb-6 text-primary">
-        🔍 Authoritarian Tendencies Assessment
+        🔍 Evaluación de Tendencias Autoritarias
       </h3>
       <div className="space-y-6">
         {questions.map(q => (
@@ -91,7 +92,7 @@ const AuthoritarianQuiz = () => {
                   answers[q.id] === true ? 'bg-red-100 text-red-700' : 'bg-gray-100 hover:bg-red-50'
                 }`}
               >
-                <X size={16} /> Yes
+                <X size={16} /> Sí
               </button>
               <button
                 onClick={() => handleAnswer(q.id, false)}
@@ -112,7 +113,7 @@ const AuthoritarianQuiz = () => {
             onClick={() => setShowResult(true)}
             className="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary-dark transition-colors"
           >
-            Analyze Results
+            Analizar Resultados
           </motion.button>
         )}
 
@@ -122,14 +123,15 @@ const AuthoritarianQuiz = () => {
             animate={{ opacity: 1, y: 0 }}
             className="mt-6 p-6 bg-gray-50 rounded-lg"
           >
-            <h4 className="font-alegreya text-xl mb-3">Analysis Results</h4>
+            <h4 className="font-alegreya text-xl mb-3">Resultados del Análisis</h4>
             <div className={`font-labrada text-lg ${getRiskLevel(calculateRisk()).color}`}>
               {getRiskLevel(calculateRisk()).icon}
               <span className="ml-2">{getRiskLevel(calculateRisk()).text}</span>
             </div>
             <p className="mt-4 text-gray-600">
-              This assessment is based on the four key indicators of authoritarian behavior 
-              identified by Steven Levitsky and Daniel Ziblatt in "How Democracies Die."
+              Esta evaluación se basa en los cuatro indicadores clave de comportamiento 
+              autoritario identificados por Steven Levitsky y Daniel Ziblatt en 
+              "Cómo Mueren las Democracias."
             </p>
           </motion.div>
         )}

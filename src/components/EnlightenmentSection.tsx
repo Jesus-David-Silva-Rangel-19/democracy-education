@@ -10,11 +10,11 @@ const EnlightenmentSection = () => {
         <div className="flex flex-col gap-4">
           <div className="flex items-start gap-3">
             <Book className="mt-1 text-primary-light" />
-            <p>Natural rights theory: life, liberty, and property</p>
+            <p>Teoría de derechos naturales: vida, libertad y propiedad</p>
           </div>
           <div className="flex items-start gap-3">
             <Scale className="mt-1 text-primary-light" />
-            <p>Separation of powers and constitutional government</p>
+            <p>Separación de poderes y gobierno constitucional</p>
           </div>
         </div>
       </InfoCard>
@@ -23,11 +23,11 @@ const EnlightenmentSection = () => {
         <div className="flex flex-col gap-4">
           <div className="flex items-start gap-3">
             <Users className="mt-1 text-primary-light" />
-            <p>Separation of powers into executive, legislative, and judicial</p>
+            <p>Separación de poderes en ejecutivo, legislativo y judicial</p>
           </div>
           <div className="flex items-start gap-3">
             <Feather className="mt-1 text-primary-light" />
-            <p>Checks and balances system</p>
+            <p>Sistema de controles y equilibrios</p>
           </div>
         </div>
       </InfoCard>
@@ -36,11 +36,11 @@ const EnlightenmentSection = () => {
         <div className="flex flex-col gap-4">
           <div className="flex items-start gap-3">
             <Users className="mt-1 text-primary-light" />
-            <p>Social contract theory and popular sovereignty</p>
+            <p>Teoría del contrato social y soberanía popular</p>
           </div>
           <div className="flex items-start gap-3">
             <Scale className="mt-1 text-primary-light" />
-            <p>Concept of general will and direct democracy</p>
+            <p>Concepto de voluntad general y democracia directa</p>
           </div>
         </div>
       </InfoCard>

@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
@@ -11,145 +12,147 @@ const Index = () => {
     <div className="bg-secondary min-h-screen">
       <Hero />
       
-      <Section title="What is Democracy?">
+      <Section title="¿Qué es la Democracia? 🏛️">
         <p>
-          Democracy is a system of government where power derives from the people, 
-          who exercise their political rights through free and fair elections. It encompasses 
-          fundamental principles such as civil liberties, rule of law, and separation of powers.
+          La democracia es un sistema de gobierno donde el poder deriva del pueblo, 
+          que ejerce sus derechos políticos a través de elecciones libres y justas. 
+          Abarca principios fundamentales como las libertades civiles, el estado de 
+          derecho y la separación de poderes.
         </p>
         <div className="grid md:grid-cols-2 gap-8 mt-12">
-          <InfoCard title="Key Democratic Principles">
+          <InfoCard title="Principios Democráticos Clave ✨">
             <ul className="list-disc list-inside space-y-2">
-              <li>Free and fair elections</li>
-              <li>Protection of human rights</li>
-              <li>Rule of law</li>
-              <li>Separation of powers</li>
-              <li>Freedom of expression</li>
+              <li>Elecciones libres y justas 🗳️</li>
+              <li>Protección de derechos humanos 🤝</li>
+              <li>Estado de derecho ⚖️</li>
+              <li>Separación de poderes 🏛️</li>
+              <li>Libertad de expresión 📢</li>
             </ul>
           </InfoCard>
-          <InfoCard title="What Democracy is Not">
+          <InfoCard title="Lo que NO es Democracia ❌">
             <ul className="list-disc list-inside space-y-2">
-              <li>Majority rule without minority rights</li>
-              <li>Absence of law and order</li>
-              <li>Pure populism</li>
-              <li>Electoral autocracy</li>
-              <li>Mob rule</li>
+              <li>Gobierno de mayoría sin derechos de minorías</li>
+              <li>Ausencia de ley y orden 🚫</li>
+              <li>Populismo puro 📢</li>
+              <li>Autocracia electoral 👑</li>
+              <li>Gobierno de las masas 👥</li>
             </ul>
           </InfoCard>
         </div>
       </Section>
 
-      <Section title="The Enlightenment & Democracy" className="bg-white">
+      <Section title="La Ilustración y la Democracia 📚" className="bg-white">
         <p className="mb-8">
-          The foundations of modern liberal democracy were laid during the Enlightenment, 
-          when philosophers developed key concepts about individual rights, separation of 
-          powers, and the social contract. 🌟
+          Los cimientos de la democracia liberal moderna se establecieron durante la 
+          Ilustración, cuando los filósofos desarrollaron conceptos clave sobre derechos 
+          individuales, separación de poderes y el contrato social. 🌟
         </p>
         <EnlightenmentSection />
       </Section>
 
-      <Section title="How Democracies Die" className="bg-white">
+      <Section title="Cómo Mueren las Democracias ⚠️" className="bg-white">
         <p className="mb-8">
-          Based on Steven Levitsky and Daniel Ziblatt's groundbreaking work, democracies often 
-          die not through violent coups, but through a gradual erosion of institutions and norms.
+          Basado en el trabajo innovador de Steven Levitsky y Daniel Ziblatt, las 
+          democracias suelen morir no por golpes violentos, sino por una erosión 
+          gradual de las instituciones y normas.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <InfoCard title="Warning Signs">
+          <InfoCard title="Señales de Advertencia 🚨">
             <ul className="list-disc list-inside space-y-2">
-              <li>Rejection of democratic rules</li>
-              <li>Denial of opponents' legitimacy</li>
-              <li>Tolerance of violence</li>
-              <li>Readiness to curtail civil liberties</li>
+              <li>Rechazo de reglas democráticas</li>
+              <li>Negación de legitimidad de oponentes</li>
+              <li>Tolerancia a la violencia</li>
+              <li>Disposición a restringir libertades civiles</li>
             </ul>
           </InfoCard>
-          <InfoCard title="Democratic Erosion">
+          <InfoCard title="Erosión Democrática 📉">
             <ul className="list-disc list-inside space-y-2">
-              <li>Weakening of institutions</li>
-              <li>Polarization of society</li>
-              <li>Assault on media freedom</li>
-              <li>Judiciary interference</li>
+              <li>Debilitamiento de instituciones</li>
+              <li>Polarización de la sociedad</li>
+              <li>Ataque a la libertad de prensa</li>
+              <li>Interferencia judicial</li>
             </ul>
           </InfoCard>
-          <InfoCard title="Protecting Democracy">
+          <InfoCard title="Protegiendo la Democracia 🛡️">
             <ul className="list-disc list-inside space-y-2">
-              <li>Strong democratic institutions</li>
-              <li>Active civil society</li>
-              <li>Independent media</li>
-              <li>Civic education</li>
+              <li>Instituciones democráticas fuertes</li>
+              <li>Sociedad civil activa</li>
+              <li>Medios independientes</li>
+              <li>Educación cívica</li>
             </ul>
           </InfoCard>
         </div>
       </Section>
 
-      <Section title="Authoritarian Leadership Assessment">
+      <Section title="Evaluación de Liderazgo Autoritario 🔍">
         <p className="mb-8 text-center max-w-3xl mx-auto">
-          Based on Levitsky and Ziblatt's research, this assessment helps identify 
-          potential authoritarian tendencies in political leaders. Answer the following 
-          questions about a leader's behavior and rhetoric: 🎯
+          Basado en la investigación de Levitsky y Ziblatt, esta evaluación ayuda a 
+          identificar tendencias autoritarias potenciales en líderes políticos. Responde 
+          las siguientes preguntas sobre el comportamiento y la retórica de un líder: 
         </p>
         <AuthoritarianQuiz />
       </Section>
 
-      <Section title="Global Challenges to Democracy">
+      <Section title="Desafíos Globales a la Democracia 🌍">
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <InfoCard title="Disinformation Campaigns">
+          <InfoCard title="Campañas de Desinformación 📱">
             <p>
-              Foreign actors, particularly Russia, China, and Iran, engage in sophisticated 
-              disinformation campaigns to undermine democratic institutions and sow discord 
-              in democratic societies.
+              Actores extranjeros, particularmente Rusia, China e Irán, participan en 
+              sofisticadas campañas de desinformación para socavar las instituciones 
+              democráticas y sembrar discordia en las sociedades democráticas.
             </p>
           </InfoCard>
-          <InfoCard title="Democratic Regression">
+          <InfoCard title="Regresión Democrática 📊">
             <p>
-              Factors contributing to democratic backsliding include rising populism, 
-              economic inequality, social media manipulation, and the erosion of 
-              democratic norms.
+              Los factores que contribuyen al retroceso democrático incluyen el populismo 
+              creciente, la desigualdad económica, la manipulación en redes sociales y 
+              la erosión de las normas democráticas.
             </p>
           </InfoCard>
         </div>
       </Section>
 
-      <Section title="Types of Authoritarian Regimes" className="bg-white">
+      <Section title="Tipos de Regímenes Autoritarios 👑" className="bg-white">
         <div className="grid md:grid-cols-3 gap-8">
-          <InfoCard title="Illiberal Democracy">
+          <InfoCard title="Democracia Iliberal 🏛️">
             <p>
-              Maintains democratic elections but gradually erodes civil liberties and 
-              institutional checks and balances.
+              Mantiene elecciones democráticas pero erosiona gradualmente las libertades 
+              civiles y los controles institucionales.
             </p>
           </InfoCard>
-          <InfoCard title="Hybrid Regime">
+          <InfoCard title="Régimen Híbrido 🔄">
             <p>
-              Combines democratic and authoritarian elements, with weak institutions 
-              and limited political competition.
+              Combina elementos democráticos y autoritarios, con instituciones débiles 
+              y competencia política limitada.
             </p>
           </InfoCard>
-          <InfoCard title="Absolutist Autocracy">
+          <InfoCard title="Autocracia Absolutista 👑">
             <p>
-              Complete concentration of power, absence of political rights, and 
-              systematic repression of opposition.
+              Concentración completa del poder, ausencia de derechos políticos y 
+              represión sistemática de la oposición.
             </p>
           </InfoCard>
         </div>
       </Section>
 
-      <Section title="Citizen's Guide">
+      <Section title="Guía del Ciudadano 📋">
         <div className="space-y-8">
-          <InfoCard title="Informed Citizenship">
+          <InfoCard title="Ciudadanía Informada 📚">
             <ul className="list-disc list-inside space-y-2">
-              <li>Verify information sources</li>
-              <li>Seek diverse perspectives</li>
-              <li>Understand democratic processes</li>
-              <li>Engage in civil discourse</li>
-              <li>Support independent journalism</li>
+              <li>Verificar fuentes de información 🔍</li>
+              <li>Buscar perspectivas diversas 🌈</li>
+              <li>Comprender procesos democráticos 📊</li>
+              <li>Participar en el diálogo civil 🗣️</li>
+              <li>Apoyar el periodismo independiente 📰</li>
             </ul>
           </InfoCard>
-          <InfoCard title="Protecting Democracy">
+          <InfoCard title="Protegiendo la Democracia 🛡️">
             <ul className="list-disc list-inside space-y-2">
-              <li>Exercise voting rights responsibly</li>
-              <li>Participate in civil society</li>
-              <li>Support democratic institutions</li>
-              <li>Resist authoritarian tendencies</li>
-              <li>Promote civic education</li>
+              <li>Ejercer el derecho al voto responsablemente 🗳️</li>
+              <li>Participar en la sociedad civil 🤝</li>
+              <li>Apoyar instituciones democráticas 🏛️</li>
+              <li>Resistir tendencias autoritarias ✊</li>
+              <li>Promover educación cívica 📖</li>
             </ul>
           </InfoCard>
         </div>
